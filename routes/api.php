@@ -29,8 +29,8 @@ $api->version('v1', function ($api) {
     $api->group(['prefix' => 'auth'], function ($api) {
         $api->post('/signup', 'App\Http\Controllers\Api\AuthController@signUp');
         $api->post('/login', 'App\Http\Controllers\Api\AuthController@login');
-        $api->post('/refresh-token', 'App\Http\Controllers\Api\AuthController@refreshToken');
         $api->post('/logout', 'App\Http\Controllers\Api\AuthController@logout');
+        $api->post('/refresh-token', 'App\Http\Controllers\Api\AuthController@refreshToken');
     });
 
 });
